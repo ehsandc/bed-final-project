@@ -1,4 +1,5 @@
 import express from "express";
+import cors from "cors";
 import * as Sentry from "@sentry/node";
 import dotenv from "dotenv";
 import { logger } from "./middleware/logger.js";
@@ -14,6 +15,21 @@ dotenv.config();
 Sentry.init({ dsn: process.env.SENTRY_DSN });
 
 const app = express();
+
+// CORS configuration
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:3001",
+      "https://localhost:3000",
+      "https://localhost:3001",
+    ],
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.use(Sentry.Handlers.requestHandler());
 app.use(express.json());
@@ -33,9 +49,18 @@ app.get("/", (req, res) => {
   res.send("Hello world!");
 });
 
+app.get("/health", (req, res) => {
+  res.status(200).json({
+    status: "OK",
+    message: "Booking API is running",
+    timestamp: new Date().toISOString(),
+  });
+});
+
 if (process.env.NODE_ENV !== "test") {
-  app.listen(3000, () => {
-    console.log("Server is listening on port 3000");
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
   });
 }
 
