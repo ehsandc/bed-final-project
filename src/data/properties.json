@@ -71,6 +71,126 @@
       "maxGuestCount": 4,
       "hostId": "d2345678-90ab-cdef-1234-567890abcdef",
       "rating": 5
+    },
+    {
+      "id": "l4567890-12f3-4567-890b-cdef01234567",
+      "title": "Luxury Downtown Penthouse",
+      "description": "Stunning penthouse with panoramic city views, rooftop terrace, and premium amenities in the heart of downtown.",
+      "location": "Chicago, Illinois",
+      "pricePerNight": 275.0,
+      "bedroomCount": 3,
+      "bathRoomCount": 3,
+      "maxGuestCount": 6,
+      "hostId": "f1234567-89ab-cdef-0123-456789abcdef",
+      "rating": 5
+    },
+    {
+      "id": "m5678901-23f4-5678-901c-def012345678",
+      "title": "Tropical Beach House",
+      "description": "Wake up to ocean waves in this beautiful beach house with private beach access and tropical gardens.",
+      "location": "Maui, Hawaii",
+      "pricePerNight": 450.0,
+      "bedroomCount": 5,
+      "bathRoomCount": 4,
+      "maxGuestCount": 10,
+      "hostId": "e2345678-90bc-def0-0123-456789abcdef",
+      "rating": 5
+    },
+    {
+      "id": "n6789012-34f5-6789-012d-ef0123456789",
+      "title": "Historic Brownstone",
+      "description": "Beautifully restored 19th-century brownstone featuring original architectural details and modern luxury.",
+      "location": "Boston, Massachusetts",
+      "pricePerNight": 195.0,
+      "bedroomCount": 4,
+      "bathRoomCount": 3,
+      "maxGuestCount": 8,
+      "hostId": "d3456789-01cd-def0-1234-56789abcdef0",
+      "rating": 4
+    },
+    {
+      "id": "o7890123-45f6-7890-123e-f01234567890",
+      "title": "Desert Oasis Retreat",
+      "description": "Modern architectural masterpiece in the Sonoran Desert with infinity pool and stunning mountain views.",
+      "location": "Scottsdale, Arizona",
+      "pricePerNight": 320.0,
+      "bedroomCount": 3,
+      "bathRoomCount": 3,
+      "maxGuestCount": 6,
+      "hostId": "c4567890-12de-f012-3456-789abcdef012",
+      "rating": 5
+    },
+    {
+      "id": "p8901234-56f7-8901-234f-012345678901",
+      "title": "Cozy Wine Country Cottage",
+      "description": "Charming cottage surrounded by vineyards with wine tasting opportunities and gourmet kitchen.",
+      "location": "Napa Valley, California",
+      "pricePerNight": 180.0,
+      "bedroomCount": 2,
+      "bathRoomCount": 2,
+      "maxGuestCount": 4,
+      "hostId": "b5678901-23ef-0123-4567-89abcdef0123",
+      "rating": 5
+    },
+    {
+      "id": "q9012345-67f8-9012-345g-123456789012",
+      "title": "Ski-in Ski-out Lodge",
+      "description": "Ultimate ski vacation home with direct slope access, hot tub, and fireplace. Perfect for winter getaways.",
+      "location": "Aspen, Colorado",
+      "pricePerNight": 380.0,
+      "bedroomCount": 4,
+      "bathRoomCount": 4,
+      "maxGuestCount": 8,
+      "hostId": "d2345678-90ab-cdef-1234-567890abcdef",
+      "rating": 5
+    },
+    {
+      "id": "r0123456-78f9-0123-456h-234567890123",
+      "title": "Industrial Loft Studio",
+      "description": "Trendy converted warehouse loft with exposed brick, high ceilings, and artistic neighborhood vibes.",
+      "location": "Portland, Oregon",
+      "pricePerNight": 110.0,
+      "bedroomCount": 1,
+      "bathRoomCount": 1,
+      "maxGuestCount": 2,
+      "hostId": "f1234567-89ab-cdef-0123-456789abcdef",
+      "rating": 4
+    },
+    {
+      "id": "s1234567-89fa-1234-567i-345678901234",
+      "title": "Waterfront Cabin",
+      "description": "Peaceful lakefront cabin with private dock, canoe included, and spectacular sunset views.",
+      "location": "Lake George, New York",
+      "pricePerNight": 140.0,
+      "bedroomCount": 2,
+      "bathRoomCount": 1,
+      "maxGuestCount": 4,
+      "hostId": "e2345678-90bc-def0-0123-456789abcdef",
+      "rating": 5
+    },
+    {
+      "id": "t2345678-90fb-2345-678j-456789012345",
+      "title": "Southern Mansion",
+      "description": "Grand antebellum mansion with wraparound porches, historic charm, and lush gardens.",
+      "location": "Savannah, Georgia",
+      "pricePerNight": 220.0,
+      "bedroomCount": 6,
+      "bathRoomCount": 4,
+      "maxGuestCount": 12,
+      "hostId": "d3456789-01cd-def0-1234-56789abcdef0",
+      "rating": 4
+    },
+    {
+      "id": "u3456789-01fc-3456-789k-567890123456",
+      "title": "Urban Garden Flat",
+      "description": "Stylish apartment with private rooftop garden, modern amenities, and walking distance to attractions.",
+      "location": "San Francisco, California",
+      "pricePerNight": 165.0,
+      "bedroomCount": 2,
+      "bathRoomCount": 2,
+      "maxGuestCount": 4,
+      "hostId": "c4567890-12de-f012-3456-789abcdef012",
+      "rating": 4
     }
   ]
 }
