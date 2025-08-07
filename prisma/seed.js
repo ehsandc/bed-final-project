@@ -24,27 +24,47 @@ async function main() {
 
   // Seed Users
   for (const user of users) {
-    await prisma.user.create({ data: user });
+    await prisma.user.upsert({
+      where: { email: user.email },
+      update: {},
+      create: user,
+    });
   }
 
   // Seed Hosts
   for (const host of hosts) {
-    await prisma.host.create({ data: host });
+    await prisma.host.upsert({
+      where: { id: host.id },
+      update: {},
+      create: host,
+    });
   }
 
   // Seed Properties
   for (const property of properties) {
-    await prisma.property.create({ data: property });
+    await prisma.property.upsert({
+      where: { id: property.id },
+      update: {},
+      create: property,
+    });
   }
 
   // Seed Bookings
   for (const booking of bookings) {
-    await prisma.booking.create({ data: booking });
+    await prisma.booking.upsert({
+      where: { id: booking.id },
+      update: {},
+      create: booking,
+    });
   }
 
   // Seed Reviews
   for (const review of reviews) {
-    await prisma.review.create({ data: review });
+    await prisma.review.upsert({
+      where: { id: review.id },
+      update: {},
+      create: review,
+    });
   }
 }
 
