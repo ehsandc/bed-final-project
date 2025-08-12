@@ -16,8 +16,19 @@ Sentry.init({ dsn: process.env.SENTRY_DSN });
 
 const app = express();
 
-// CORS configuration - Allow all origins for development
+// Global middleware
+app.use(express.json());
 app.use(cors());
+
+// Route mounting
+app.use("/users", usersRouter);
+app.use("/hosts", hostsRouter);
+app.use("/properties", propertiesRouter);
+app.use("/bookings", bookingsRouter);
+app.use("/reviews", reviewsRouter);
+app.use("/login", loginRouter);
+
+// Health check
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "OK",
