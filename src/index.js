@@ -12,7 +12,9 @@ import reviewsRouter from "./routes/reviews.js";
 import loginRouter from "./routes/login.js";
 
 dotenv.config();
-Sentry.init({ dsn: process.env.SENTRY_DSN });
+if (process.env.SENTRY_DSN) {
+  Sentry.init({ dsn: process.env.SENTRY_DSN });
+}
 
 const app = express();
 
